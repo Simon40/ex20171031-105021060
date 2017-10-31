@@ -29,15 +29,6 @@ public class MainFrame extends JFrame {
     private JPanel jp1=new JPanel(new GridLayout(2,3,5,5));
     private JPanel jp=new JPanel(new GridLayout(1,6,6,5));
     private LoginFrame loginfrm;
-    // ------------------------------------------------ File
-    private JInternalFrame jif1=new JInternalFrame();
-    private Container jif1;
-    private JMenuBar jmb1=new JMenuBar();
-    private JMenu jm=new JMenu("Data");
-    private JMenuItem jm1=new JMenuItem("Load");
-    private JMenuItem jm2=new JMenuItem("New");
-    private JMenuItem jm3=new JMenuItem("Close");
-    private JFileChooser jfc=new JFileChooser();
     MainFrame(LoginFrame frm){
         loginfrm=frm;
         initComp();
@@ -82,7 +73,7 @@ public class MainFrame extends JFrame {
                         JOptionPane.OK_CANCEL_OPTION);
             }
         });
-        //---------------------------------------- File
+
 
         jMexit.addActionListener(new ActionListener() {
             @Override
